@@ -4,6 +4,9 @@ FROM python:3.12-slim
 # Set the working directory
 WORKDIR /app
 
+# Install Node.js (required for JupyterLab)
+RUN apt-get update && apt-get install -y nodejs npm && rm -rf /var/lib/apt/lists/*
+
 # Copy the requirements file into the container
 COPY requirements.txt ./
 
