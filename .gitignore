@@ -205,3 +205,11 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Lab datalake: generated bronze CSV partitions (reproducible from pipeline / source CSV)
+**/datamart/**/*.csv
+# Lab datalake: generated silver/gold parquet datasets
+**/datamart/**/*.parquet
+
+# Local / WSL-style trash (not project source)
+**/.Trash-0/
