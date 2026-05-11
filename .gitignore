@@ -213,3 +213,6 @@ __marimo__/
 
 # Local / WSL-style trash (not project source)
 **/.Trash-0/
+
+# VS Code / Cursor multi-root workspace definitions (machine-specific paths)
+*.code-workspace
